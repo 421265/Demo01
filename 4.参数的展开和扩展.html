@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		// 函数的参数
+		//1.函数扩展、数组展开
+		// 2.默认参数
+		
+		
+		// 参数扩展
+		// 1.收集剩余的参数
+		// function show(a,b,....args){}
+		// *Rest paramenter必须是最后一个
+		// 2.展开数组
+		// 展开后的效果，跟直接把数组的内容写在这儿一样
+		
+		
+		// 默认参数
+		// ...arr=>1,2,3
+		// $("#div").animate({width:"200px"})
+		// $("#div").animate({width:"200px",1000})
+		
+		function show(a,b,...args,c){
+			alert(a)
+			alert(b)
+			alert(args)
+		}
+		show(12,15,8,9,20,90)
+	</script>
+</html>

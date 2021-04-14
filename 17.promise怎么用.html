@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		let p=new Promise(function(resolve,reject){
+			// 异步代码
+			// resolve——成功了
+			// reject——失败了
+			$.ajax({
+				url:"arr.json",
+				success(arr){
+					resolve(arr)
+				},
+				error(err){
+					reject(err)
+				}
+			})
+		})
+		p.then(function(){
+			alert("成功")
+		},function(){
+			alert("失败")
+		})
+	</script>
+</html>
